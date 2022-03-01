@@ -33,7 +33,12 @@ int main()
 			}
 		}
 	}
-	
+	for(int i=1;i<n+1;i++){
+		for(int j=1;j<tsum+1;j++){
+			cout<<dp[i][j]<<" ";
+		}
+		cout<<endl;
+	}
 	
 	cout<<dp[n][tsum]<<endl;
 	return 0;
