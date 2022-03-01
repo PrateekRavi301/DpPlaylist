@@ -7,7 +7,7 @@ typedef pair<int,int> pp ;
 int main()
 {
 	int n=5,sum;
-//	cin>>n>>w;
+//	cin>>n>>sum;
 	int a[n] = {2,3,7,8,10};
 //	for(int i=0;i<n;i++)cin>>a[i];
 	for(int i=0;i<n;i++)sum+=a[i];
@@ -35,7 +35,12 @@ int main()
 			}
 		}
 	}
-	
+	for(int i=1;i<n+1;i++){
+		for(int j=1;j<sum+1;j++){
+			cout<<dp[i][j]<<" ";
+		}
+		cout<<endl;
+	}
 	if(dp[n][sum]==true)cout<<"YES";
 	else cout<<"N0";
 	return 0;
