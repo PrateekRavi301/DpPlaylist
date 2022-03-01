@@ -31,7 +31,7 @@ int main()
 		}
 	}
 	for(int i=1;i<n+1;i++){
-		for(int j=1;j<sum+1;j++){
+		for(int j=1;j<range+1;j++){
 			cout<<dp[i][j]<<" ";
 		}
 		cout<<endl;
