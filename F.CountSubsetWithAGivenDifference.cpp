@@ -7,8 +7,8 @@ typedef pair<int,int> pp ;
 int main()
 {
 	int n=4,diff=1,range=0;                               //  subsets are: 1,3   1,2
-//	cin>>n>>diff;															1,3   1,2
-	int a[n] = {1,1,2,3};  								//					1,1,2   3			
+//	cin>>n>>diff;								1,3   1,2
+	int a[n] = {1,1,2,3};  					//		1,1,2   3			
 //	for(int i=0;i<n;i++)cin>>a[i];
 
 	for(int i=0;i<n;i++)range+=a[i];
@@ -33,7 +33,12 @@ int main()
 			}
 		}
 	}
-	
+	for(int i=1;i<n+1;i++){
+		for(int j=1;j<tsum+1;j++){
+			cout<<dp[i][j]<<" ";
+		}
+		cout<<endl;
+	}
 	
 	cout<<dp[n][tsum]<<endl;
 	return 0;
