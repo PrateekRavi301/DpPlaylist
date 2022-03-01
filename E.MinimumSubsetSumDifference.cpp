@@ -7,7 +7,7 @@ typedef pair<int,int> pp ;
 int main()
 {
 	int n=3,range=0;
-//	cin>>n>>w;
+//	cin>>n;
 	int a[n] = {1,2,7};  // S1={1,2} S2={7} diff = 4
 //	for(int i=0;i<n;i++)cin>>a[i];
 
@@ -30,7 +30,12 @@ int main()
 			}
 		}
 	}
-	
+	for(int i=1;i<n+1;i++){
+		for(int j=1;j<sum+1;j++){
+			cout<<dp[i][j]<<" ";
+		}
+		cout<<endl;
+	}
 	vector<int> ans;
 	
 	for(int j=0;j<=range/2;j++){
