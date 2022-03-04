@@ -42,7 +42,16 @@ int main()
 	memset(dp,-1,sizeof(dp));
 //	int dp[n+1][m+1]={-1};
 	
-	cout<<LCS(a,b,n,m,dp);
+	int ans = LCS(a,b,n,m,dp);
+	
+	for(int i=0;i<n+1;i++){
+		for(int j=0;j<m+1;j++){
+			cout<<dp[i][j]<<" ";
+		}
+		cout<<endl;
+	}
+	
+	cout<<ans;
 	
 	return 0;
 }
